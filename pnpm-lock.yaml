@@ -63,6 +63,9 @@ importers:
       '@sly-cli/sly':
         specifier: ^1.14.0
         version: 1.14.0(typescript@5.5.4)
+      '@total-typescript/ts-reset':
+        specifier: ^0.5.1
+        version: 0.5.1
       '@types/eslint':
         specifier: ^8.56.10
         version: 8.56.11
@@ -1331,6 +1334,9 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  '@total-typescript/ts-reset@0.5.1':
+    resolution: {integrity: sha512-AqlrT8YA1o7Ff5wPfMOL0pvL+1X+sw60NN6CcOCqs658emD6RfiXhF7Gu9QcfKBH7ELY2nInLhKSCWVoNL70MQ==}
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -3927,6 +3933,8 @@ snapshots:
       zod: 3.23.8
     optionalDependencies:
       typescript: 5.5.4
+
+  '@total-typescript/ts-reset@0.5.1': {}
 
   '@types/cookie@0.6.0': {}
 

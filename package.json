@@ -34,6 +34,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.8.3",
     "@sly-cli/sly": "^1.14.0",
+    "@total-typescript/ts-reset": "^0.5.1",
     "@types/eslint": "^8.56.10",
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.14.10",
