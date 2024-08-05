@@ -26,7 +26,8 @@
     /* Path Aliases */
     "baseUrl": ".",
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@/icon-name": ["./src/icons/name.d.ts", "./types/icon-name.d.ts"]
     }
   },
   "include": [

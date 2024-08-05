@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "build": "next build",
+    "build:icons": "tsx ./scripts/build-icons.ts",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:push": "drizzle-kit push",
@@ -34,12 +35,17 @@
     "@biomejs/biome": "1.8.3",
     "@sly-cli/sly": "^1.14.0",
     "@types/eslint": "^8.56.10",
+    "@types/fs-extra": "^11.0.4",
     "@types/node": "^20.14.10",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",
     "drizzle-kit": "^0.21.4",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "node-html-parser": "^6.1.13",
     "postcss": "^8.4.39",
     "tailwindcss": "^3.4.3",
+    "tsx": "^4.16.5",
     "typescript": "^5.5.3"
   },
   "ct3aMetadata": {
