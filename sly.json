@@ -1,0 +1,17 @@
+{
+  "$schema": "https://sly-cli.fly.dev/registry/config.json",
+  "libraries": [
+    {
+      "name": "lucide-icons",
+      "directory": "./src/icons",
+      "postinstall": [],
+      "transformers": []
+    },
+    {
+      "name": "jolly-ui",
+      "directory": "./src/components",
+      "postinstall": [],
+      "transformers": []
+    }
+  ]
+}
