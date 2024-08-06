@@ -4,6 +4,7 @@ import NextAuth from "next-auth";
 import Passkey from "next-auth/providers/passkey";
 import { PUBLIC_APP_DOMAIN } from "~/constants/app";
 import type { EmailConfig } from "next-auth/providers";
+import { cache } from "react";
 
 const mockEmail = {
 	id: "email",
@@ -46,4 +47,16 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 	pages: {
 		signIn: "/login",
 	},
+});
+
+export const getAuthSession = cache(auth);
+
+export const withAuthSession = cache(async () => {
+	const session = await auth();
+
+	if (!session) {
+		throw new Error("session not found");
+	}
+
+	return session;
 });
